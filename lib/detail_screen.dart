@@ -91,6 +91,14 @@ class DetailScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius : BorderRadius.circular(25),
                       child: Image.asset(
+                          'assets/images/monkasel_2.jpg'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: ClipRRect(
+                      borderRadius : BorderRadius.circular(25),
+                      child: Image.asset(
                           'assets/images/monkasel_3.jpg'),
                     ),
                   ),
