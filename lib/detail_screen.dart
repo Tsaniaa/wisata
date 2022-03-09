@@ -1,8 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wisata/model/tourism_place.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+  const DetailScreen({Key? key, required this.place}) : super(key: key);
+
+  final TourismPlace place;
 
   @override
   Widget build(BuildContext context) {
@@ -11,17 +13,17 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget> [
-            Image.asset('assets/images/submarine.jpg'),
+            Image.asset(place.imageAsset),
             Container(
                 margin: const EdgeInsets.only(top: 16.0),
-                child: const Text(
-                  "Surabaya Submarine Monument",
+                child: Text(
+                  place.name,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30.0,
                     fontFamily: 'Lobster',
                   ),
-                )
+                ),
             ), // Container for title
             Container(
               margin: const EdgeInsets.symmetric(vertical: 16.0),
