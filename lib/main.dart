@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Contacts',
+      title: 'Wisata Surabaya',
       theme: ThemeData(),
       home: const MainScreen(),
     );
