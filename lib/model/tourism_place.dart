@@ -9,7 +9,8 @@ class TourismPlace {
   String img1;
   String img2;
   String img3;
-  String imgasset;
+  String imgasset1;
+  String imgasset2;
 
   TourismPlace({
     required this.name,
@@ -22,7 +23,8 @@ class TourismPlace {
     required this.img1,
     required this.img2,
     required this.img3,
-    required this.imgasset,
+    required this.imgasset1,
+    required this.imgasset2,
 });
 }
 
@@ -42,7 +44,8 @@ var tourismPlaceList = [
       img1: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg',
       img2: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Submarine_Monument_Surabaya_2.JPG',
       img3: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Submarine_Monument_Surabaya_3.JPG',
-      imgasset: 'assets/images/submarine.jpg',
+      imgasset1: 'assets/images/submarine2.jpg',
+      imgasset2: 'assets/images/submarine.jpg',
   ),
   TourismPlace(
     name: 'Klenteng Sanggar Agung',
@@ -64,7 +67,8 @@ var tourismPlaceList = [
     img1: 'https://upload.wikimedia.org/wikipedia/commons/5/51/The_front_side_of_Sanggar_Agung_Temple%2C_Surabaya-Indonesia%2C_which_is_facing_the_sea.jpg',
     img2: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Sanggar_Agung_Temple_surrounded_by_mangrove%2C_Surabaya-Indonesia.jpg',
     img3: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Guan_She_Yin_statue_of_Sanggar_Agung_Temple%2C_Surabaya-Indonesia.jpg',
-    imgasset: 'assets/images/klenteng.jpg',
+    imgasset1: 'assets/images/klenteng2.jpg',
+    imgasset2: 'assets/images/klenteng.jpg',
   ),
   TourismPlace(
     name: 'House of Sampoerna',
@@ -84,7 +88,8 @@ var tourismPlaceList = [
     img1: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/House_of_Sampoerna_Mei_2015.jpg',
     img2: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Koleksi_House_Of_Sampoerna.jpg',
     img3: 'https://hotel-management.binus.ac.id/files/2014/07/DSC05952.jpg',
-    imgasset: 'assets/images/sampoerna.jpg',
+    imgasset1: 'assets/images/sampoerna2.jpg',
+    imgasset2: 'assets/images/sampoerna.jpg',
   ),
   TourismPlace(
     name: 'Tugu Pahlawan',
@@ -102,7 +107,8 @@ var tourismPlaceList = [
     img1: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Tugu_Pahlawan_6.jpg',
     img2: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Tugu_Pahlawan_Surabaya.jpg',
     img3: 'https://ketaketik.com/wp-content/uploads/2016/01/img_3002.jpeg',
-    imgasset: 'assets/images/tugu.jpg',
+    imgasset1: 'assets/images/tugu2.jpg',
+    imgasset2: 'assets/images/tugu.jpg',
   ),
   TourismPlace(
     name: 'Patung Suro Boyo',
@@ -117,7 +123,8 @@ var tourismPlaceList = [
     img1: 'https://blog.dparagon.com/wp-content/uploads/2021/08/Screenshot_20210819-205811_Maps-1.jpg',
     img2: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Sura_dan_Baya_statue.jpg',
     img3: 'https://blogpictures.99.co/surabaya-1.jpg',
-    imgasset: 'assets/images/sby.jpg',
+    imgasset1: 'assets/images/sby2.jpg',
+    imgasset2: 'assets/images/sby.jpg',
   ),
   TourismPlace(
     name: 'Museum 10 November',
@@ -130,10 +137,11 @@ var tourismPlaceList = [
           'This museum was built with the aim of studying and deepening the events of the Battle of Ten November 1945, '
           'the Ten November Museum is located at Jalan Pahlawan, Surabaya. The collections in this museum are very diverse, '
           'such as photo collections, historical rooms, a group of statues that also existed during the Japanese era.',
-    img1: 'https://ketaketik.com/wp-content/uploads/2016/01/img_2994.jpeg',
+    img1: 'https://statik.tempo.co/data/2010/11/10/id_53189/53189_620.jpg',
     img2: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Museum_10_November.jpg',
     img3: 'https://statik.tempo.co/data/2010/11/10/id_53189/53189_620.jpg',
-    imgasset: 'assets/images/museum.jpeg',
+    imgasset1: 'assets/images/museum2.jpg',
+    imgasset2: 'assets/images/museum.jpeg',
   ),
   TourismPlace(
     name: 'Ekowisata Mangrove',
@@ -151,7 +159,8 @@ var tourismPlaceList = [
     img1: 'https://cdn.travelspromo.com/wp-content/uploads/2018/09/wisata-mangrove-surabaya-dermaga.jpg',
     img2: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Surabaya_Mangrove_Edu-Tourism_Centre_Rancangan_David_Laksono_Lim.jpg',
     img3: 'https://cdn.travelspromo.com/wp-content/uploads/2018/09/wisata-mangrove-surabaya.jpg',
-    imgasset: 'assets/images/mangrove.jpg',
+    imgasset1: 'assets/images/mangrove2.jpg',
+    imgasset2: 'assets/images/mangrove.jpg',
   ),
   TourismPlace(
     name: 'Kebun Binatang Surabaya',
@@ -168,41 +177,8 @@ var tourismPlaceList = [
     img1: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Wira_Sumatran_Tiger.jpg',
     img2: 'https://upload.wikimedia.org/wikipedia/commons/5/54/Surabaya_Zoo.JPG',
     img3: 'https://infosurabaya.b-cdn.net/wp-content/uploads/2021/10/KBS-buka-lagi.jpg',
-    imgasset: 'assets/images/bonbin.jpg',
+    imgasset1: 'assets/images/bonbin2.jpg',
+    imgasset2: 'assets/images/bonbin.jpg',
   ),
-  TourismPlace(
-    name: 'Atlantis Land',
-    location: 'Sukolilo Baru',
-    imageAsset: 'assets/images/atlantis.jpg',
-    day: 'Everyday',
-    time: '10:00 - 18.00',
-    price: '100.000,- s/d 125.000,-',
-    description:
-          'Atlantis Land Surabaya is predicted to be an international class ride like Universal Studios Singapore. '
-          'Atlantis Land is not only interesting in terms of its architecture, but also this vehicle presents a variety of games, '
-          'culinary delights, and performances. Atlantis Land was built as high as 65 meters in a 15 hectare yard. '
-          'At night, Atlantis Land looks very exotic, the combination of lights and colorful fountains '
-          'makes this place a cool photo spot for selfies.',
-    img1: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg',
-    img2: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg',
-    img3: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg',
-    imgasset: 'assets/images/atlantis.jpg',
-  ),
-  TourismPlace(
-    name: 'Kampung Bulak',
-    location: 'Kenjeran',
-    imageAsset: 'assets/images/bulak.jpg',
-    day: 'Everyday',
-    time: '24 hours',
-    price: '2000,-',
-    description:
-          'Villages with colorfully painted houses can also be found in Surabaya. '
-          'You can hunt for Instagramable spots in this village until you are satisfied. '
-          'Located near Ria Kenjeran Beach, you can visit this village as well as stop by at the beach. '
-          'This is a tourist spot with beautiful but cheap photo spots in Surabaya.',
-    img1: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg',
-    img2: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg',
-    img3: 'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg',
-    imgasset: 'assets/images/bulak.jpg',
-  ),
+
 ];

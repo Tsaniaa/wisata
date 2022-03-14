@@ -48,9 +48,9 @@ Widget ListItem(TourismPlace place){
               children: <Widget>[
                 Text(
                   place.name,
-                  style: TextStyle(fontSize: 16.0),
+                  style: const TextStyle(fontSize: 16.0),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Text(place.location),
