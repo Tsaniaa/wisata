@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wisata/done_tourism_list.dart';
+import 'package:wisata/model/tourism_place.dart';
 import 'package:wisata/tourism_list.dart';
 
 class MainScreen extends StatefulWidget {
@@ -10,6 +11,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen>{
+  final List<TourismPlace> doneTourismPlaceList = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +30,8 @@ class _MainScreenState extends State<MainScreen>{
           )
         ],
       ),
-      body: TourismList(),
+      // body: TourismList(),
+      body: TourismList(doneTourismPlaceList: doneTourismPlaceList),
     );
   }
 }

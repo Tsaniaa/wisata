@@ -27,6 +27,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  http: ^0.13.4
+  webview_flutter: ^2.0.4
   flutter:
     sdk: flutter
 
@@ -59,8 +61,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/images/
+#  assets:
+#    - assets/images/
 #    - assets/images/submarine.jpg
 #    - assets/images/monkasel_1.jpg
 #    - assets/images/monkasel_2.jpg
@@ -80,15 +82,14 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Lobster
-       fonts:
-         - asset: assets/fonts/Lobster-Regular.ttf
-
-     - family: Oxygen
-       fonts:
-         - asset: assets/fonts/Oxygen-Regular.ttf
-         - asset: assets/fonts/Oxygen-Bold.ttf
-           weight: 700
+      - family: Lobster
+        fonts:
+          - asset: assets/fonts/Lobster-Regular.ttf
+      - family: Oxygen
+        fonts:
+          - asset: assets/fonts/Oxygen-Regular.ttf
+          - asset: assets/fonts/Oxygen-Bold.ttf
+#        weight: 700
 
   #   - family: Schyler
   #     fonts:

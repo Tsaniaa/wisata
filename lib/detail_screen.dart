@@ -9,13 +9,16 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Wisata ' + place.name),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           // reverse: true,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget> [
-              Image.asset(place.imageAsset),
+              Image.network(place.imageAsset),
               Container(
                 margin: const EdgeInsets.only(top: 16.0),
                 child: Text(
@@ -98,7 +101,7 @@ class DetailScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(4.0),
                       child: ClipRRect(
                         borderRadius : BorderRadius.circular(20),
-                        child: Image.asset(
+                        child: Image.network(
                             place.imgasset1),
                       ),
                     ),
@@ -106,7 +109,7 @@ class DetailScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(4.0),
                       child: ClipRRect(
                         borderRadius : BorderRadius.circular(20),
-                        child: Image.asset(
+                        child: Image.network(
                             place.imgasset2),
                       ),
                     ),

@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => DoneTourismProvider(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Wisata Surabaya',
         theme: ThemeData(),
         home: MainScreen(),
