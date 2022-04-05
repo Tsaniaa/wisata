@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wisata/done_tourism_list.dart';
 import 'package:wisata/model/tourism_place.dart';
 import 'package:wisata/tourism_list.dart';
+import 'package:wisata/Create.dart';
 
 class MainScreen extends StatefulWidget {
   MainScreen({Key? key}) : super(key: key);
@@ -18,13 +19,23 @@ class _MainScreenState extends State<MainScreen>{
       appBar: AppBar(
         title: const Text('Wisata Surabaya'),
         actions: <Widget> [
+          // IconButton(
+          //   icon: const Icon(Icons.done_outline),
+          //   onPressed: (){
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(builder: (context) {
+          //         return Create();
+          //       }),);
+          //   },
+          // )
           IconButton(
-            icon: const Icon(Icons.done_outline),
+            icon: const Icon(Icons.add),
             onPressed: (){
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return DoneTourismList();
+                  return Create();
                 }),);
             },
           )

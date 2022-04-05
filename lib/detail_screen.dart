@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wisata/model/tourism_place.dart';
+import 'package:wisata/editScreen.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({Key? key, required this.place}) : super(key: key);
@@ -11,6 +12,21 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Wisata ' + place.name),
+        actions: <Widget>[
+          IconButton(
+              icon: const Icon(Icons.edit_outlined),
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return editScreen(
+                      place: place,
+                    );
+                  }),
+                );
+              }
+          ),
+        ],
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -71,6 +87,7 @@ class DetailScreen extends StatelessWidget {
                 height: 150,
                 padding: const EdgeInsets.only(bottom: 16.00),
                 child: ListView(
+                  //scrollDirection: Axis.horizontal,
                   scrollDirection: Axis.horizontal,
                   children: <Widget> [
                     Padding(
